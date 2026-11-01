@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Menu Kuliner | Rasa Nusantara</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-details">
+        <span class="logo-badge">RN</span>
+        <span class="logo_name">Rasa Nusantara</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="menu.html#pilih" class="active">Menu Kuliner</a></li>
+        <li><a href="../kategori/kategori.html">Kategori</a></li>
+        <li class="keluar"><a href="../login.html">Keluar (Logout)</a></li>
+      </ul>
+    </aside>
+
+    <section class="home-section">
+      <header class="topbar">
+        <h1>Tambah / Ubah Menu</h1>
+        <span class="badge-mitra">Login sebagai: Admin</span>
+      </header>
+
+      <main class="home-content">
+        <form class="form-card" action="menu.html#pilih">
+          <div class="form-grup">
+            <label for="mitra">Mitra Pemilik Menu</label>
+            <select id="mitra" name="mitra" required>
+              <option value="">-- Pilih mitra --</option>
+              <option value="1">Warung Padang Sederhana</option>
+              <option value="2">Soto Lamongan Cak Man</option>
+              <option value="3">Dawet Ayu Bu Sari</option>
+              <option value="4">Gudeg Bu Tini</option>
+            </select>
+          </div>
+
+          <div class="form-grup">
+            <label for="nama">Nama Hidangan</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Rendang Daging Sapi Minang" required />
+          </div>
+
+          <div class="form-grup">
+            <label for="kategori">Kategori</label>
+            <select id="kategori" name="kategori" required>
+              <option value="">-- Pilih kategori --</option>
+              <option value="makanan-berat">Makanan Berat</option>
+              <option value="minuman-khas">Minuman Khas</option>
+              <option value="jajanan-umkm">Jajanan UMKM</option>
+              <option value="oleh-oleh">Oleh-Oleh</option>
+            </select>
+          </div>
+
+          <div class="form-grup">
+            <label for="harga">Harga (Rp)</label>
+            <input type="number" id="harga" name="harga" min="0" step="500" placeholder="35000" required />
+          </div>
+
+          <div class="form-grup">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Ceritakan singkat tentang hidangan ini"></textarea>
+          </div>
+
+          <div class="form-grup">
+            <span class="label" id="label-status">Status</span>
+            <div class="pilihan-inline" role="radiogroup" aria-labelledby="label-status">
+              <label><input type="radio" name="status" value="tersedia" checked /> Tersedia</label>
+              <label><input type="radio" name="status" value="habis" /> Habis</label>
+            </div>
+          </div>
+
+          <div class="form-grup">
+            <label for="foto">Foto Hidangan</label>
+            <input type="file" id="foto" name="foto" accept="image/*" />
+          </div>
+
+          <div class="form-aksi">
+            <button type="submit" class="btn btn-merah">Simpan</button>
+            <a href="menu.html#pilih" class="btn btn-garis">Batal</a>
+          </div>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>

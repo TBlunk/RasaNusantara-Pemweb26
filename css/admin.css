@@ -1,0 +1,517 @@
+/* ==========================================================
+   Rasa Nusantara - admin.css
+   Styling halaman dashboard pengelola UMKM
+   BAB 2 CSS
+   ========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --merah: #d32f2f;
+  --merah-tua: #b71c1c;
+  --kuning: #ffb300;
+  --krem: #fff8f0;
+  --teks: #2b1a1a;
+  --teks-lembut: #6b5a5a;
+  --garis: #f3dccb;
+  --lebar-sidebar: 240px;
+}
+
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background-color: var(--krem);
+  color: var(--teks);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--kuning);
+  outline-offset: 2px;
+}
+
+/* ---------- Sidebar ---------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: var(--lebar-sidebar);
+  height: 100%;
+  padding: 20px 14px;
+  background-color: var(--merah-tua);
+  color: #fff;
+}
+
+.logo-details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+  padding: 0 8px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.logo-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: var(--kuning);
+  color: #4a0000;
+  font-size: 12px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.nav-links a {
+  display: block;
+  padding: 11px 14px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background-color: var(--merah);
+}
+
+.nav-links a.active {
+  background-color: var(--kuning);
+  color: #4a0000;
+  font-weight: 700;
+}
+
+.nav-links .keluar {
+  margin-top: 24px;
+}
+
+/* ---------- Konten utama ---------- */
+.home-section {
+  margin-left: var(--lebar-sidebar);
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 32px;
+  border-bottom: 1px solid var(--garis);
+  background-color: #fff;
+}
+
+.topbar h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: var(--merah-tua);
+}
+
+.badge-mitra {
+  padding: 6px 16px;
+  border: 1px solid #ffd7a8;
+  border-radius: 999px;
+  background-color: #fff1e0;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--merah-tua);
+}
+
+.home-content {
+  padding: 28px 32px 48px;
+}
+
+.home-content h2 {
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: var(--merah-tua);
+}
+
+/* ---------- Kartu ringkasan ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  padding: 18px 22px;
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.stat-card span {
+  display: block;
+  font-size: 13px;
+  color: var(--teks-lembut);
+}
+
+.stat-card strong {
+  font-size: 24px;
+  color: var(--merah);
+}
+
+.stat-card .hijau {
+  color: #1b5e20;
+}
+
+.stat-card .emas {
+  color: #8a5a00;
+}
+
+/* ---------- Header seksi + tombol ---------- */
+.bar-judul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.bar-judul h2 {
+  margin: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-merah {
+  background-color: var(--merah);
+  color: #fff;
+}
+
+.btn-merah:hover {
+  background-color: var(--merah-tua);
+}
+
+.btn-garis {
+  border: 1.5px solid #cdbdbd;
+  background-color: #fff;
+  color: var(--teks);
+}
+
+.btn-garis:hover {
+  border-color: var(--merah);
+}
+
+/* ---------- Tabel ---------- */
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  padding: 12px 16px;
+  background-color: var(--merah);
+  color: #fff;
+  text-align: left;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--garis);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.badge-ok {
+  background-color: #e3f4e4;
+  color: #1b5e20;
+}
+
+.badge-habis {
+  background-color: #fde7e7;
+  color: var(--merah-tua);
+}
+
+.badge-nonaktif {
+  background-color: #ececec;
+  color: #4a4a4a;
+}
+
+.aksi {
+  display: flex;
+  gap: 14px;
+  font-weight: 700;
+}
+
+.aksi .lihat {
+  color: var(--merah);
+}
+
+/* ---------- Pilih mitra & menu per mitra ----------
+   Memakai selector :target (CSS murni, tanpa JavaScript):
+   menu.html#mitra-1 hanya menampilkan section dengan id="mitra-1" */
+.info {
+  margin-bottom: 18px;
+  color: var(--teks-lembut);
+}
+
+.mitra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.mitra-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px 22px;
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.mitra-card:hover {
+  border-color: var(--merah);
+}
+
+.mitra-card strong {
+  font-size: 16px;
+  color: var(--merah-tua);
+}
+
+.mitra-card span {
+  font-size: 14px;
+  color: var(--teks-lembut);
+}
+
+/* section menu disembunyikan, tampil hanya jika sedang dipilih (:target) */
+.menu-mitra {
+  display: none;
+}
+
+.menu-mitra:target {
+  display: block;
+}
+
+/* tab pindah mitra: hanya tampil saat sebuah mitra dipilih */
+.tab-mitra {
+  display: none;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tab-mitra a {
+  padding: 8px 16px;
+  border: 1.5px solid #cdbdbd;
+  border-radius: 999px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.tab-mitra a:hover {
+  border-color: var(--merah);
+}
+
+.tab-mitra .kembali {
+  border-color: transparent;
+  background: none;
+  color: var(--merah-tua);
+}
+
+.home-content:has(.menu-mitra:target) .tab-mitra {
+  display: flex;
+}
+
+.home-content:has(.menu-mitra:target) .pilih-mitra {
+  display: none;
+}
+
+/* tab mitra yang sedang aktif */
+.home-content:has(#mitra-1:target) .tab-1,
+.home-content:has(#mitra-2:target) .tab-2,
+.home-content:has(#mitra-3:target) .tab-3,
+.home-content:has(#mitra-4:target) .tab-4 {
+  border-color: var(--merah);
+  background-color: var(--merah);
+  color: #fff;
+}
+
+.aksi a,
+.aksi button {
+  border: none;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.aksi .edit {
+  color: #8a5a00;
+}
+
+.aksi .hapus {
+  color: var(--merah-tua);
+}
+
+/* ---------- Form entry ---------- */
+.form-card {
+  max-width: 640px;
+  padding: 28px;
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  background-color: #fff;
+}
+
+.form-grup {
+  margin-bottom: 18px;
+}
+
+.form-grup label,
+.form-grup .label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.form-grup input[type="text"],
+.form-grup input[type="number"],
+.form-grup select,
+.form-grup textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid #cdbdbd;
+  border-radius: 10px;
+  background-color: #faf6f3;
+  font: inherit;
+}
+
+.form-grup textarea {
+  resize: vertical;
+}
+
+.pilihan-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.pilihan-inline label {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.form-aksi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+/* Tablet: kartu ringkasan 1 kolom lebih rapat */
+@media (max-width: 900px) {
+  .stat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .home-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* Smartphone: sidebar pindah ke atas */
+@media (max-width: 768px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 14px;
+  }
+
+  .logo-details {
+    margin-bottom: 12px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .nav-links .keluar {
+    margin-top: 0;
+  }
+
+  .home-section {
+    margin-left: 0;
+    min-height: 0;
+  }
+
+  .form-card {
+    padding: 20px;
+  }
+
+  .mitra-grid {
+    grid-template-columns: 1fr;
+  }
+}

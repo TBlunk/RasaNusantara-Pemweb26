@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kategori | Rasa Nusantara</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-details">
+        <span class="logo-badge">RN</span>
+        <span class="logo_name">Rasa Nusantara</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="../menu/menu.html#pilih">Menu Kuliner</a></li>
+        <li><a href="kategori.html" class="active">Kategori</a></li>
+        <li class="keluar"><a href="../login.html">Keluar (Logout)</a></li>
+      </ul>
+    </aside>
+
+    <section class="home-section">
+      <header class="topbar">
+        <h1>Kelola Kategori</h1>
+        <span class="badge-mitra">Login sebagai: Admin</span>
+      </header>
+
+      <main class="home-content">
+        <div class="bar-judul">
+          <h2>Daftar Kategori Kuliner</h2>
+          <a href="kategori-entry.html" class="btn btn-merah">+ Tambah Kategori</a>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Ikon</th>
+                <th>Nama Kategori</th>
+                <th>Deskripsi</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td aria-hidden="true">🍛</td>
+                <td><strong>Makanan Berat</strong></td>
+                <td>Hidangan utama khas daerah</td>
+                <td>
+                  <div class="aksi">
+                    <a href="kategori-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td aria-hidden="true">🥤</td>
+                <td><strong>Minuman Khas</strong></td>
+                <td>Minuman tradisional dan segar</td>
+                <td>
+                  <div class="aksi">
+                    <a href="kategori-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td aria-hidden="true">🍡</td>
+                <td><strong>Jajanan UMKM</strong></td>
+                <td>Camilan dan kue buatan UMKM lokal</td>
+                <td>
+                  <div class="aksi">
+                    <a href="kategori-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td aria-hidden="true">📦</td>
+                <td><strong>Oleh-Oleh</strong></td>
+                <td>Produk makanan untuk dibawa pulang</td>
+                <td>
+                  <div class="aksi">
+                    <a href="kategori-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

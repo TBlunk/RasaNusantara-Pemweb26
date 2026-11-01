@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk Akun | Rasa Nusantara</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-badge">RN</span>
+          Rasa Nusantara
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#menu">Menu Kuliner</a></li>
+            <li><a href="login.html" class="btn-masuk">Masuk</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container auth-wrapper">
+      <div class="auth-card">
+        <h1>Masuk Akun</h1>
+        <p class="auth-sub">Sistem Informasi Katalog Kuliner Rasa Nusantara</p>
+
+        <form action="dashboard.html">
+          <div class="form-grup">
+            <label for="username">Email / Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="pengguna@rasanusantara.com"
+              required
+            />
+          </div>
+          <div class="form-grup">
+            <label for="password">Kata Sandi</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukkan kata sandi"
+              required
+            />
+            <a href="#" class="lupa">Lupa kata sandi?</a>
+          </div>
+          <button type="submit" class="btn btn-merah btn-blok">
+            MASUK SEKARANG
+          </button>
+        </form>
+
+        <p class="auth-bawah">
+          Belum memiliki akun? <a href="register.html">Daftar Akun Baru</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <h4>&copy; Lab Pemrograman Komputer 2025 &middot; Rasa Nusantara</h4>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin | Rasa Nusantara</title>
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-details">
+        <span class="logo-badge">RN</span>
+        <span class="logo_name">Rasa Nusantara</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html" class="active">Dashboard</a></li>
+        <li><a href="menu/menu.html">Menu Kuliner</a></li>
+        <li><a href="kategori/kategori.html">Kategori</a></li>
+        <li class="keluar"><a href="login.html">Keluar (Logout)</a></li>
+      </ul>
+    </aside>
+
+    <section class="home-section">
+      <header class="topbar">
+        <h1>Dashboard Admin</h1>
+        <span class="badge-mitra">Login sebagai: Admin</span>
+      </header>
+
+      <main class="home-content">
+        <div class="stat-grid">
+          <div class="stat-card">
+            <span>Total Mitra Terdaftar</span>
+            <strong>4 Mitra</strong>
+          </div>
+          <div class="stat-card">
+            <span>Mitra Aktif</span>
+            <strong class="hijau">3 Mitra</strong>
+          </div>
+          <div class="stat-card">
+            <span>Total Menu Semua Mitra</span>
+            <strong class="emas">10 Menu</strong>
+          </div>
+        </div>
+
+        <div class="bar-judul">
+          <h2>Daftar Mitra UMKM Kuliner</h2>
+          <a href="mitra/mitra-entry.html" class="btn btn-merah">+ Tambah Mitra</a>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>No</th>
+                <th>Nama Mitra</th>
+                <th>Daerah</th>
+                <th>Jumlah Menu</th>
+                <th>Status</th>
+                <th>Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td><strong>Warung Padang Sederhana</strong></td>
+                <td>Sumatera Barat</td>
+                <td>4</td>
+                <td><span class="badge badge-ok">Aktif</span></td>
+                <td>
+                  <div class="aksi">
+                    <a href="menu/menu.html#mitra-1" class="lihat">Lihat Menu</a>
+                    <a href="mitra/mitra-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><strong>Soto Lamongan Cak Man</strong></td>
+                <td>Jawa Timur</td>
+                <td>2</td>
+                <td><span class="badge badge-ok">Aktif</span></td>
+                <td>
+                  <div class="aksi">
+                    <a href="menu/menu.html#mitra-2" class="lihat">Lihat Menu</a>
+                    <a href="mitra/mitra-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td><strong>Dawet Ayu Bu Sari</strong></td>
+                <td>Jawa Tengah</td>
+                <td>2</td>
+                <td><span class="badge badge-nonaktif">Nonaktif</span></td>
+                <td>
+                  <div class="aksi">
+                    <a href="menu/menu.html#mitra-3" class="lihat">Lihat Menu</a>
+                    <a href="mitra/mitra-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td><strong>Gudeg Bu Tini</strong></td>
+                <td>Yogyakarta</td>
+                <td>2</td>
+                <td><span class="badge badge-ok">Aktif</span></td>
+                <td>
+                  <div class="aksi">
+                    <a href="menu/menu.html#mitra-4" class="lihat">Lihat Menu</a>
+                    <a href="mitra/mitra-entry.html" class="edit">Edit</a>
+                    <button type="button" class="hapus">Hapus</button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

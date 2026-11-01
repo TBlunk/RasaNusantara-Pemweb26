@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Kategori | Rasa Nusantara</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-details">
+        <span class="logo-badge">RN</span>
+        <span class="logo_name">Rasa Nusantara</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="../menu/menu.html#pilih">Menu Kuliner</a></li>
+        <li><a href="kategori.html" class="active">Kategori</a></li>
+        <li class="keluar"><a href="../login.html">Keluar (Logout)</a></li>
+      </ul>
+    </aside>
+
+    <section class="home-section">
+      <header class="topbar">
+        <h1>Tambah / Ubah Kategori</h1>
+        <span class="badge-mitra">Login sebagai: Admin</span>
+      </header>
+
+      <main class="home-content">
+        <form class="form-card" action="kategori.html">
+          <div class="form-grup">
+            <label for="nama">Nama Kategori</label>
+            <input type="text" id="nama" name="nama" placeholder="Contoh: Makanan Berat" required />
+          </div>
+
+          <div class="form-grup">
+            <label for="ikon">Ikon (emoji)</label>
+            <input type="text" id="ikon" name="ikon" maxlength="2" placeholder="🍛" />
+          </div>
+
+          <div class="form-grup">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Penjelasan singkat kategori ini"></textarea>
+          </div>
+
+          <div class="form-aksi">
+            <button type="submit" class="btn btn-merah">Simpan</button>
+            <a href="kategori.html" class="btn btn-garis">Batal</a>
+          </div>
+        </form>
+      </main>
+    </section>
+  </body>
+</html>

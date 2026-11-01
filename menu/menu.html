@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu Kuliner | Rasa Nusantara</title>
+    <link rel="stylesheet" href="../css/admin.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="logo-details">
+        <span class="logo-badge">RN</span>
+        <span class="logo_name">Rasa Nusantara</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="../dashboard.html">Dashboard</a></li>
+        <li><a href="menu.html#pilih" class="active">Menu Kuliner</a></li>
+        <li><a href="../kategori/kategori.html">Kategori</a></li>
+        <li class="keluar"><a href="../login.html">Keluar (Logout)</a></li>
+      </ul>
+    </aside>
+
+    <section class="home-section">
+      <header class="topbar">
+        <h1>Kelola Menu Kuliner</h1>
+        <span class="badge-mitra">Login sebagai: Admin</span>
+      </header>
+
+      <main class="home-content">
+        <!-- Tampil saat belum ada mitra yang dipilih -->
+        <section class="pilih-mitra" id="pilih">
+          <h2>Pilih Mitra</h2>
+          <p class="info">
+            Pilih mitra terlebih dahulu untuk melihat dan mengelola menunya.
+          </p>
+          <div class="mitra-grid">
+            <a href="#mitra-1" class="mitra-card">
+              <strong>Warung Padang Sederhana</strong>
+              <span>Sumatera Barat &middot; 4 menu</span>
+            </a>
+            <a href="#mitra-2" class="mitra-card">
+              <strong>Soto Lamongan Cak Man</strong>
+              <span>Jawa Timur &middot; 2 menu</span>
+            </a>
+            <a href="#mitra-3" class="mitra-card">
+              <strong>Dawet Ayu Bu Sari</strong>
+              <span>Jawa Tengah &middot; 2 menu (nonaktif)</span>
+            </a>
+            <a href="#mitra-4" class="mitra-card">
+              <strong>Gudeg Bu Tini</strong>
+              <span>Yogyakarta &middot; 2 menu</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Tab pindah mitra, tampil saat sebuah mitra dipilih -->
+        <nav class="tab-mitra" aria-label="Pilih mitra">
+          <a href="#pilih" class="kembali">&larr; Semua Mitra</a>
+          <a href="#mitra-1" class="tab-1">Warung Padang Sederhana</a>
+          <a href="#mitra-2" class="tab-2">Soto Lamongan Cak Man</a>
+          <a href="#mitra-3" class="tab-3">Dawet Ayu Bu Sari</a>
+          <a href="#mitra-4" class="tab-4">Gudeg Bu Tini</a>
+        </nav>
+
+        <!-- Mitra 1 -->
+        <section class="menu-mitra" id="mitra-1">
+          <div class="bar-judul">
+            <h2>Menu dari Warung Padang Sederhana</h2>
+            <a href="menu-entry.html" class="btn btn-merah">+ Tambah Menu</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Hidangan</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Rendang Daging Sapi Minang</strong></td>
+                  <td>Makanan Berat</td>
+                  <td>Rp 35.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Ayam Pop Sambal Lado Hijau</strong></td>
+                  <td>Makanan Berat</td>
+                  <td>Rp 22.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><strong>Teh Talua Khas Minang</strong></td>
+                  <td>Minuman Khas</td>
+                  <td>Rp 12.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><strong>Dendeng Balado Kering</strong></td>
+                  <td>Makanan Berat</td>
+                  <td>Rp 30.000</td>
+                  <td><span class="badge badge-habis">Habis</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Mitra 2 -->
+        <section class="menu-mitra" id="mitra-2">
+          <div class="bar-judul">
+            <h2>Menu dari Soto Lamongan Cak Man</h2>
+            <a href="menu-entry.html" class="btn btn-merah">+ Tambah Menu</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Hidangan</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Soto Ayam Lamongan</strong></td>
+                  <td>Makanan Berat</td>
+                  <td>Rp 20.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Es Jeruk Peras</strong></td>
+                  <td>Minuman Khas</td>
+                  <td>Rp 8.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Mitra 3 -->
+        <section class="menu-mitra" id="mitra-3">
+          <div class="bar-judul">
+            <h2>Menu dari Dawet Ayu Bu Sari</h2>
+            <a href="menu-entry.html" class="btn btn-merah">+ Tambah Menu</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Hidangan</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Es Cendol Dawet Ayu</strong></td>
+                  <td>Minuman Khas</td>
+                  <td>Rp 10.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Wedang Ronde</strong></td>
+                  <td>Minuman Khas</td>
+                  <td>Rp 12.000</td>
+                  <td><span class="badge badge-habis">Habis</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Mitra 4 -->
+        <section class="menu-mitra" id="mitra-4">
+          <div class="bar-judul">
+            <h2>Menu dari Gudeg Bu Tini</h2>
+            <a href="menu-entry.html" class="btn btn-merah">+ Tambah Menu</a>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama Hidangan</th>
+                  <th>Kategori</th>
+                  <th>Harga</th>
+                  <th>Status</th>
+                  <th>Aksi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><strong>Gudeg Komplit</strong></td>
+                  <td>Makanan Berat</td>
+                  <td>Rp 25.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><strong>Bakpia Kacang Hijau</strong></td>
+                  <td>Oleh-Oleh</td>
+                  <td>Rp 15.000</td>
+                  <td><span class="badge badge-ok">Tersedia</span></td>
+                  <td><div class="aksi"><a href="menu-entry.html" class="edit">Edit</a><button type="button" class="hapus">Hapus</button></div></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
